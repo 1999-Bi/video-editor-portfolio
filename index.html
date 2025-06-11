@@ -1,0 +1,364 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blessing Ikyav | Professional Video Editor & Content Creator</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        /* Custom styles */
+        .portfolio-item {
+            transition: all 0.3s ease;
+        }
+        .portfolio-item:hover {
+            transform: scale(1.03);
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+        }
+        .mobile-menu {
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.3s ease-out;
+        }
+        .mobile-menu.open {
+            max-height: 500px;
+        }
+        .active-section {
+            color: #3b82f6;
+            font-weight: 600;
+        }
+    </style>
+</head>
+<body class="font-sans bg-gray-50 text-gray-800">
+    <!-- Navigation -->
+    <nav class="bg-white shadow-md sticky top-0 z-50">
+        <div class="container mx-auto px-4 py-3 flex justify-between items-center">
+            <a href="#" class="text-2xl font-bold text-blue-600">Blessing Ikyav</a>
+            
+            <!-- Desktop Menu -->
+            <div class="hidden md:flex space-x-8">
+                <a href="#home" class="nav-link hover:text-blue-600 active-section">Home</a>
+                <a href="#services" class="nav-link hover:text-blue-600">Services</a>
+                <a href="#portfolio" class="nav-link hover:text-blue-600">Portfolio</a>
+                <a href="#about" class="nav-link hover:text-blue-600">About</a>
+                <a href="#contact" class="nav-link hover:text-blue-600">Contact</a>
+            </div>
+            
+            <!-- Mobile Menu Button -->
+            <button id="mobile-menu-button" class="md:hidden text-gray-600 focus:outline-none">
+                <i class="fas fa-bars text-2xl"></i>
+            </button>
+        </div>
+        
+        <!-- Mobile Menu -->
+        <div id="mobile-menu" class="mobile-menu md:hidden bg-white">
+            <div class="container mx-auto px-4 py-2 flex flex-col space-y-3">
+                <a href="#home" class="nav-link py-2 hover:text-blue-600 active-section">Home</a>
+                <a href="#services" class="nav-link py-2 hover:text-blue-600">Services</a>
+                <a href="#portfolio" class="nav-link py-2 hover:text-blue-600">Portfolio</a>
+                <a href="#about" class="nav-link py-2 hover:text-blue-600">About</a>
+                <a href="#contact" class="nav-link py-2 hover:text-blue-600">Contact</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="py-20 bg-gradient-to-r from-blue-500 to-purple-600 text-white">
+        <div class="container mx-auto px-4 flex flex-col md:flex-row items-center">
+            <div class="md:w-1/2 mb-10 md:mb-0">
+                <h1 class="text-4xl md:text-5xl font-bold mb-4">Professional Video Editor & Content Creation</h1>
+                <p class="text-xl mb-8">Bringing your vision to life with stunning visuals and compelling storytelling.</p>
+                <a href="#contact" class="bg-white text-blue-600 px-6 py-3 rounded-lg font-semibold hover:bg-gray-100 transition duration-300 inline-block">Get in Touch</a>
+            </div>
+            <div class="md:w-1/2 flex justify-center">
+                <img src="https://images.unsplash.com/photo-1579389083078-4e7018379f7e?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80" 
+                     alt="Video Editing" class="rounded-lg shadow-2xl max-w-full h-auto">
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="py-20 bg-white">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl font-bold text-center mb-4">My Services</h2>
+            <p class="text-xl text-center text-gray-600 mb-12 max-w-3xl mx-auto">Comprehensive video and content solutions tailored to your needs</p>
+            
+            <div class="grid md:grid-cols-3 gap-8">
+                <div class="bg-gray-50 p-6 rounded-lg shadow-md hover:shadow-lg transition duration-300">
+                    <div class="text-blue-600 mb-4">
+                        <i class="fas fa-film text-4xl"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-3">Video Editing</h3>
+                    <p class="text-gray-600">Professional editing for YouTube videos, commercials, social media content, and more with color grading and effects.</p>
+                </div>
+                
+                <div class="bg-gray-50 p-6 rounded-lg shadow-md hover:shadow-lg transition duration-300">
+                    <div class="text-blue-600 mb-4">
+                        <i class="fas fa-photo-film text-4xl"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-3">Content Creation</h3>
+                    <p class="text-gray-600">Engaging content strategy and production for brands and influencers across all platforms.</p>
+                </div>
+                
+                <div class="bg-gray-50 p-6 rounded-lg shadow-md hover:shadow-lg transition duration-300">
+                    <div class="text-blue-600 mb-4">
+                        <i class="fas fa-mobile-screen text-4xl"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-3">Social Media Management</h3>
+                    <p class="text-gray-600">Complete social media packages including content planning, creation, and scheduling.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Portfolio Section -->
+    <section id="portfolio" class="py-20 bg-gray-50">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl font-bold text-center mb-4">My Portfolio</h2>
+            <p class="text-xl text-center text-gray-600 mb-12 max-w-3xl mx-auto">A showcase of my recent work and projects</p>
+            
+            <!-- Google Drive Portfolio Viewer -->
+            <div class="bg-white p-6 rounded-lg shadow-md mb-12">
+                <h3 class="text-2xl font-semibold mb-4">Video Portfolio</h3>
+                <p class="mb-4">Browse my complete collection of work on Google Drive:</p>
+                <div class="aspect-w-16 aspect-h-9">
+                    <iframe src="https://drive.google.com/drive/folders/1dDwz8oXAM5Ia26K7J96xCBALEbklFPyL" 
+                            class="w-full h-96 border-2 border-gray-200 rounded-lg" frameborder="0"></iframe>
+                </div>
+            </div>
+            
+            <!-- Featured Projects -->
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+                <div class="portfolio-item bg-white rounded-lg overflow-hidden shadow-md">
+                    <div class="aspect-w-16 aspect-h-9 bg-gray-200">
+                        <img src="https://images.unsplash.com/photo-1611162617213-7d7a39e9b1d7?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1374&q=80" 
+                             alt="Project 1" class="w-full h-full object-cover">
+                    </div>
+                    <div class="p-4">
+                        <h3 class="font-semibold text-lg mb-2">Corporate Brand Video</h3>
+                        <p class="text-gray-600">A promotional video for a tech startup showcasing their product and vision.</p>
+                    </div>
+                </div>
+                
+                <div class="portfolio-item bg-white rounded-lg overflow-hidden shadow-md">
+                    <div class="aspect-w-16 aspect-h-9 bg-gray-200">
+                    </div>
+                    <div class="p-4">
+                        <h3 class="font-semibold text-lg mb-2">Social Media Campaign</h3>
+                        <p class="text-gray-600">A series of short-form videos for a fashion brand's Instagram campaign.</p>
+                    </div>
+                </div>
+                
+                <div class="portfolio-item bg-white rounded-lg overflow-hidden shadow-md">
+                    <div class="aspect-w-16 aspect-h-9 bg-gray-200">
+                        <img src="https://images.unsplash.com/photo-1626785774573-4b799315345d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1471&q=80" 
+                             alt="Project 3" class="w-full h-full object-cover">
+                    </div>
+                    <div class="p-4">
+                        <h3 class="font-semibold text-lg mb-2">YouTube Series</h3>
+                        <p class="text-gray-600">A 10-episode educational series for a finance YouTube channel.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="py-20 bg-white">
+        <div class="container mx-auto px-4">
+            <div class="flex flex-col md:flex-row items-center">
+                <div class="md:w-1/3 mb-10 md:mb-0 flex justify-center">
+                    <img src="my picture.jpg" 
+                         alt="Blessing Ikyav" class="rounded-full w-64 h-64 object-cover shadow-lg">
+                </div>
+                <div class="md:w-2/3 md:pl-12">
+                    <h2 class="text-3xl font-bold mb-6">About Me</h2>
+                    <p class="text-lg mb-4">Hello, I'm Blessing Ikyav, a professional video editor and content creator based in Jos, Plateau, Nigeria.</p>
+                    <p class="text-lg mb-4">With over 5 years of experience in the industry, I specialize in creating compelling visual content that tells stories and engages audiences. My expertise spans across various editing software and platforms, ensuring your content stands out.</p>
+                    <p class="text-lg mb-6">When I'm not editing videos, you can find me exploring new creative techniques or mentoring aspiring content creators.</p>
+                    
+                    <div class="flex space-x-4">
+                        <a href="#" class="text-blue-600 hover:text-blue-800 text-2xl"><i class="fab fa-facebook"></i></a>
+                        <a href="#" class="text-blue-600 hover:text-blue-800 text-2xl"><i class="fab fa-instagram"></i></a>
+                        <a href="#" class="text-blue-600 hover:text-blue-800 text-2xl"><i class="fab fa-tiktok"></i></a>
+                        <a href="#" class="text-blue-600 hover:text-blue-800 text-2xl"><i class="fab fa-linkedin"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-20 bg-gray-50">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl font-bold text-center mb-4">Get In Touch</h2>
+            <p class="text-xl text-center text-gray-600 mb-12 max-w-3xl mx-auto">Ready to start your project? Reach out and let's create something amazing together.</p>
+            
+            <div class="grid md:grid-cols-2 gap-12">
+                <div>
+                    <h3 class="text-2xl font-semibold mb-6">Contact Information</h3>
+                    <div class="space-y-4">
+                        <div class="flex items-start">
+                            <i class="fas fa-envelope text-blue-600 mt-1 mr-4"></i>
+                            <div>
+                                <h4 class="font-semibold">Email</h4>
+                                <a href="mailto:blessingsewuese60@gmail.com" class="text-gray-600 hover:text-blue-600">blessingsewuese60@gmail.com</a>
+                            </div>
+                        </div>
+                        <div class="flex items-start">
+                            <i class="fas fa-phone text-blue-600 mt-1 mr-4"></i>
+                            <div>
+                                <h4 class="font-semibold">Phone</h4>
+                                <a href="tel:09050716891" class="text-gray-600 hover:text-blue-600">09050716891</a>
+                            </div>
+                        </div>
+                        <div class="flex items-start">
+                            <i class="fas fa-map-marker-alt text-blue-600 mt-1 mr-4"></i>
+                            <div>
+                                <h4 class="font-semibold">Location</h4>
+                                <p class="text-gray-600">Jos, Plateau, Nigeria</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="mt-8">
+                        <h4 class="font-semibold mb-4">Follow Me</h4>
+                        <div class="flex space-x-4">
+                            <a href="#" class="bg-blue-600 text-white p-3 rounded-full hover:bg-blue-700 transition duration-300">
+                                <i class="fab fa-facebook-f"></i>
+                            </a>
+                            <a href="#" class="bg-pink-600 text-white p-3 rounded-full hover:bg-pink-700 transition duration-300">
+                                <i class="fab fa-instagram"></i>
+                            </a>
+                            <a href="#" class="bg-black text-white p-3 rounded-full hover:bg-gray-800 transition duration-300">
+                                <i class="fab fa-tiktok"></i>
+                            </a>
+                            <a href="#" class="bg-blue-500 text-white p-3 rounded-full hover:bg-blue-600 transition duration-300">
+                                <i class="fab fa-linkedin-in"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div>
+                    <form class="bg-white p-6 rounded-lg shadow-md">
+                        <div class="mb-4">
+                            <label for="name" class="block text-gray-700 font-medium mb-2">Your Name</label>
+                            <input type="text" id="name" class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500">
+                        </div>
+                        <div class="mb-4">
+                            <label for="email" class="block text-gray-700 font-medium mb-2">Email Address</label>
+                            <input type="email" id="email" class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500">
+                        </div>
+                        <div class="mb-4">
+                            <label for="subject" class="block text-gray-700 font-medium mb-2">Subject</label>
+                            <input type="text" id="subject" class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500">
+                        </div>
+                        <div class="mb-4">
+                            <label for="message" class="block text-gray-700 font-medium mb-2">Message</label>
+                            <textarea id="message" rows="4" class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500"></textarea>
+                        </div>
+                        <button type="submit" class="w-full bg-blue-600 text-white py-3 rounded-lg font-semibold hover:bg-blue-700 transition duration-300">Send Message</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-800 text-white py-8">
+        <div class="container mx-auto px-4">
+            <div class="flex flex-col md:flex-row justify-between items-center">
+                <div class="mb-4 md:mb-0">
+                    <h3 class="text-2xl font-bold">Blessing Ikyav</h3>
+                    <p class="text-gray-400">Professional Video Editor & Content Creator</p>
+                </div>
+                <div class="flex space-x-6">
+                    <a href="#" class="text-gray-400 hover:text-white"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#" class="text-gray-400 hover:text-white"><i class="fab fa-instagram"></i></a>
+                    <a href="#" class="text-gray-400 hover:text-white"><i class="fab fa-tiktok"></i></a>
+                    <a href="#" class="text-gray-400 hover:text-white"><i class="fab fa-linkedin-in"></i></a>
+                </div>
+            </div>
+            <div class="border-t border-gray-700 mt-6 pt-6 text-center text-gray-400">
+                <p>&copy; 2023 Blessing Ikyav. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Mobile Menu Toggle
+        const mobileMenuButton = document.getElementById('mobile-menu-button');
+        const mobileMenu = document.getElementById('mobile-menu');
+        
+        mobileMenuButton.addEventListener('click', () => {
+            mobileMenu.classList.toggle('open');
+        });
+        
+        // Smooth scrolling for navigation links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function(e) {
+                e.preventDefault();
+                
+                const targetId = this.getAttribute('href');
+                const targetElement = document.querySelector(targetId);
+                
+                if (targetElement) {
+                    window.scrollTo({
+                        top: targetElement.offsetTop - 80,
+                        behavior: 'smooth'
+                    });
+                    
+                    // Close mobile menu if open
+                    mobileMenu.classList.remove('open');
+                }
+            });
+        });
+        
+        // Highlight active section in navigation
+        const sections = document.querySelectorAll('section');
+        const navLinks = document.querySelectorAll('.nav-link');
+        
+        window.addEventListener('scroll', () => {
+            let current = '';
+            
+            sections.forEach(section => {
+                const sectionTop = section.offsetTop;
+                const sectionHeight = section.clientHeight;
+                
+                if (pageYOffset >= (sectionTop - 150)) {
+                    current = section.getAttribute('id');
+                }
+            });
+            
+            navLinks.forEach(link => {
+                link.classList.remove('active-section');
+                if (link.getAttribute('href') === #${current}) {
+                    link.classList.add('active-section');
+                }
+            });
+        });
+        
+        // Form submission handling
+        const contactForm = document.querySelector('form');
+        if (contactForm) {
+            contactForm.addEventListener('submit', (e) => {
+                e.preventDefault();
+                
+                // Get form values
+                const name = document.getElementById('name').value;
+                const email = document.getElementById('email').value;
+                const subject = document.getElementById('subject').value;
+                const message = document.getElementById('message').value;
+                
+                // Here you would typically send the form data to a server
+                // For this example, we'll just log it and show an alert
+                console.log({name, email, subject, message});
+                
+                alert('Thank you for your message! I will get back to you soon.');
+                contactForm.reset();
+            });
+        }
+    </script>
+</body>
+</html>
